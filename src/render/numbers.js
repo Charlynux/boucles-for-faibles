@@ -6,17 +6,22 @@ const patch = init([]);
 const container = document.getElementById("numbers-container");
 
 function renderNumber(number) {
-    return h('div', {}, number);
+    return h('div.number', {}, number);
 }
 
 function renderNumbers(numbers) {
     return numbers.map(renderNumber);
 }
 
-function view(data) {
-    return h('div', {}, isArray(data) ? renderNumbers(data) : renderNumber(data));
+const displayData = data => isArray(data) ? renderNumbers(data) : renderNumber(data);
+
+function view(title, data) {
+    return h('div', {}, [h('h2', {}, title), h('div.numbers', {}, displayData(data))]);
 }
 
-export default function render(data) {
-    patch(container, view(data));
+export default function render(title, data) {
+    const newElement = document.createElement("div");
+    container.appendChild(newElement);
+
+    patch(newElement, view(title, data));
 }
