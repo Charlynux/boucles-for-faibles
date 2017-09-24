@@ -3,7 +3,7 @@ import isArray from "is-array";
 
 const patch = init([]);
 
-const container = document.getElementById("numbers-container");
+const container = document.getElementById("numbers");
 
 function renderNumber(number) {
     return h('div.number', {}, number);

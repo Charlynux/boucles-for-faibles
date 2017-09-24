@@ -9,3 +9,7 @@ export function double(value) {
 export function isOdd(value) {
     return value % 2 === 0;
 }
+
+export function average(notes) {
+    return (notes.reduce(sum) / notes.length).toFixed(2);
+}

@@ -18,7 +18,11 @@ export default {
     commonjs(),
     babel({
         presets: [ 'es2015-rollup' ],
-      exclude: 'node_modules/**'
+        exclude: 'node_modules/**',
+        plugins: [
+          "transform-object-rest-spread",
+          "syntax-object-rest-spread"
+        ]
     }),
     uglify(),
     sizes()

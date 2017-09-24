@@ -1,8 +1,22 @@
-import render from "./render/numbers";
-import { sum, double, isOdd } from "./utils";
+import './numbers';
+import './students';
 
-const numbers = [1, 2, 3, 4, 5];
-const result = numbers.map(double);
+/// Dirty-Dirty router
+function router() {
+    var url = location.hash.slice(1) || '/';
 
-render('Initial', numbers);
-render('Result', result);
+    if (url === '/ltacademy') {
+        document.getElementById("ltacademy")
+                .style.display = "block";
+        document.getElementById("numbers")
+                .style.display = "none";
+    } else {
+        document.getElementById("numbers")
+            .style.display = "block";
+        document.getElementById("ltacademy")
+            .style.display = "none";
+    }
+}
+
+window.addEventListener('hashchange', router);
+window.addEventListener('load', router);
