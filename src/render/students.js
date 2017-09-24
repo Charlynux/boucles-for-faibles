@@ -1,7 +1,6 @@
 import { h, init } from 'snabbdom';
 import attributes from 'snabbdom/modules/attributes';
 
-console.log(attributes)
 const patch = init([
     attributes
 ]);
@@ -13,8 +12,7 @@ function renderStudent(student) {
         h('img', { attrs: {src: `img/${student.avatar}` }}),
         h('div.student-props', {}, [
             h('div.student-props-name', {}, student.name),
-            h('div.student-props-notes', {}, `Notes: ${student.notes.join(", ")}`),
-            h('div.student-props-average', {}, `Moyenne: ${student.average}`)
+            h('div.student-props-notes', {}, `Notes: ${student.notes.join(", ")}`)
         ])
     ]);
 }
