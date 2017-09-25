@@ -17,10 +17,12 @@ function renderStudent(student) {
     ]);
 }
 
-function renderStudents(students) {
+function renderAcademy(students) {
     return h('div.students', {}, [
         h('h2', {}, "LTA'cademy"),
-        ...students.map(renderStudent)
+        ...(students.length > 0
+            ? students.map(renderStudent)
+            : [h('div', {}, "Aucun étudiant")])
     ]);
 }
 
@@ -28,7 +30,7 @@ export default function (students) {
     const newNode = document.createElement("div");
     container.appendChild(newNode)
    
-    const vdom = renderStudents(students);
+    const vdom = renderAcademy(students);
 
     patch(newNode, vdom);
 }
