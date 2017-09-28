@@ -1,7 +1,7 @@
 Content of a "lightning talk" given at "La Tech Amiénoise".
 
 
-The "no-slide" idea is stolen to both Venkat Subramaniam and André Staltz.
+The "no-slide" idea is stolen to both Josh Long, Venkat Subramaniam and André Staltz.
 Thanks to them.
 
 ## Pour approfondir le sujet
