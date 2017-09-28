@@ -1,3 +1,6 @@
 {
-    "workbench.colorTheme": "Default Light+"
+  "editor.formatOnSave": false,
+  "editor.fontSize": 32,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "workbench.colorTheme": "Default Light+"
 }

@@ -21,7 +21,7 @@ export default [
     {
         name: 'Florian',
         avatar: 'denver.png',
-        notes: [8, 16, 11, 10, 1, 7],
+        notes: [8, 7, 4, 2, 1, 7],
         sex: 'M',
     },
     {
