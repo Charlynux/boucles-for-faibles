@@ -1320,9 +1320,9 @@ filename-regex@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/filename-regex/-/filename-regex-2.0.1.tgz#c1c4b9bee3e09725ddb106b75c1e301fe2f18b26"
 
-filesize@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/filesize/-/filesize-4.1.2.tgz#fcd570af1353cea97897be64f56183adb995994b"
+filesize@^6.0.1:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/filesize/-/filesize-6.1.0.tgz#e81bdaa780e2451d714d71c0d7a4f3238d37ad00"
 
 fill-range@^2.1.0:
   version "2.2.3"
@@ -2874,11 +2874,11 @@ rollup-plugin-node-resolve@^5.2.0:
     resolve "^1.11.1"
     rollup-pluginutils "^2.8.1"
 
-rollup-plugin-sizes@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-sizes/-/rollup-plugin-sizes-0.5.1.tgz#ede42da1a253e5f2225096958345ba145c989a4f"
+rollup-plugin-sizes@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-sizes/-/rollup-plugin-sizes-1.0.2.tgz#098dc4ae9f7308d236e4f0b0b19cef7256315feb"
   dependencies:
-    filesize "^4.1.2"
+    filesize "^6.0.1"
     module-details-from-path "^1.0.3"
 
 rollup-plugin-uglify@^6.0.3:
