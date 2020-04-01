@@ -15,7 +15,7 @@
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-sizes": "^0.5.1",
+    "rollup-plugin-sizes": "^1.0.2",
     "rollup-plugin-uglify": "^6.0.3",
     "rollup-watch": "^4.3.1",
     "snabbdom": "^0.7.3"
