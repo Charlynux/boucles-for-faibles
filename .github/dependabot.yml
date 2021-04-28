@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: open
+    versions:
+    - 7.3.0
+    - 7.3.1
+  - dependency-name: browser-sync
+    versions:
+    - 2.26.13
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
