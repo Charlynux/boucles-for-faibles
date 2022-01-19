@@ -1,4 +1,3 @@
 function Component(numbers) {
-    return numbers
-                .map(number => <div>number</div>);
+    return <ul>{numbers.map(number => <li>number</li>)}</ul>;
 }
